@@ -1,0 +1,10 @@
+---
+# tasks file for challenge
+# ---
+-
+  become: true
+  hosts: all
+  name: "copy file hello.txt"
+  shell:
+    cmd: "cp /etc/ansible/challenge/hello.txt /tmp/test1"
+

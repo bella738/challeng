@@ -1,0 +1,13 @@
+--- 
+- 
+  hosts: all
+  tasks: 
+    - 
+      apt: 
+        update_cache: true
+      become: true
+      name: "Update APT package manager repositories cache"
+    - 
+      apt: "name=docker-ce state=latest"
+      name: "istall docker-ce"
+
